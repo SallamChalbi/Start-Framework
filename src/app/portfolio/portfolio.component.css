@@ -1,0 +1,15 @@
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #29b197;
+    opacity: 0;
+    cursor: pointer;
+    transition: .6 opacity;
+}
+
+.layer:hover {
+    opacity: .9;
+}

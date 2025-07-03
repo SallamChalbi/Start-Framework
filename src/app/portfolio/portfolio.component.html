@@ -1,0 +1,26 @@
+<section class="mb-4 text-center">
+    <div class="pt-4">
+        <app-star [textInput]="textData" customColor="#2C3E50"></app-star>
+        <div class="container" *ngIf="imgs.length > 0; else noImages">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4" *ngFor="let img of imgs">
+                    <div class="rounded-3 overflow-hidden position-relative">
+                        <img [src]="img" class="w-100 rounded-3" alt="">
+                        <div class="layer d-flex align-items-center justify-content-center" (click)="flag = false; imagePath = img">
+                            <i class="fa-solid fa-plus text-white fa-6x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div [class.d-none]="flag" class="model position-fixed start-0 w-100 top-0 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center z-3" 
+         (click)="closeModal($event.target, imgRef)">
+        <img #imgRef [src]="imagePath" alt="">
+    </div>
+    <ng-template #noImages>
+        <div class="alert alert-warning">
+            No images available.
+        </div>
+    </ng-template>
+</section>

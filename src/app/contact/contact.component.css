@@ -1,0 +1,17 @@
+label{
+    color: var(--secondary-color);
+    margin-bottom: 7px;
+    transition: .6s top;
+}
+
+.top{
+    top: 40px;
+}
+
+input.form-control:focus{
+    box-shadow: none;
+}
+
+button{
+    background-color:  var(--secondary-color) !important;
+}

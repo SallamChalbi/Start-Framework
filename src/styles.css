@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --main-color: #2C3E50;
+    --secondary-color: #1ABC9C;
+}
+router-outlet+*, router-outlet+*>div {
+    min-height: inherit;
+}
+
+.section{
+    background-color: var(--secondary-color);
+}
+
+section{
+    min-height: inherit;
+}
