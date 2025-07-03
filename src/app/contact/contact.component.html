@@ -4,16 +4,16 @@
 
         <form class="w-50 p-3 mx-auto mt-5">
             <label for="userName" [class.top-0]="userName.value.length" class="position-relative top">userName:</label>
-            <input #userName (keydown)="userName" type="text" id="userName" placeholder="userName" class="form-control border-0 border-bottom py-3 position-relative">
+            <input #userName (input)="userName" type="text" id="userName" placeholder="userName" class="form-control border-0 border-bottom py-3 position-relative">
 
             <label for="userAge" [class.top-0]="userAge.value.length" class="position-relative top">userAge:</label>
-            <input #userAge (keydown)="userAge" type="text" id="userAge" placeholder="userAge" class="form-control border-0 border-bottom py-3 position-relative">
+            <input #userAge (input)="userAge" type="text" id="userAge" placeholder="userAge" class="form-control border-0 border-bottom py-3 position-relative">
 
             <label for="userEmail" [class.top-0]="userEmail.value.length" class="position-relative top">userEmail:</label>
-            <input #userEmail (keydown)="userEmail" type="text" id="userEmail" placeholder="userEmail" class="form-control border-0 border-bottom py-3 position-relative">
+            <input #userEmail (input)="userEmail" type="text" id="userEmail" placeholder="userEmail" class="form-control border-0 border-bottom py-3 position-relative">
 
             <label for="userPassword" [class.top-0]="userPassword.value.length" class="position-relative top">userPassword:</label>
-            <input #userPassword (keydown)="userPassword" type="text" id="userPassword" placeholder="userPassword" class="form-control border-0 border-bottom py-3 position-relative">
+            <input #userPassword (input)="userPassword" type="text" id="userPassword" placeholder="userPassword" class="form-control border-0 border-bottom py-3 position-relative">
 
             <button type="button" class="btn mt-4 text-white"> send Message </button>
         </form>
